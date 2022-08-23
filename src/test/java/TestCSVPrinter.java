@@ -24,7 +24,7 @@ public class TestCSVPrinter{
         }
         Assertions.assertEquals(2,size);
     }
-    @AfterEach
+    @Test
     public void testSplit() throws IOException{
         int size =0;
         String[] line= new String[5];
