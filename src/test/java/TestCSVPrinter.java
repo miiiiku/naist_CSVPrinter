@@ -6,18 +6,24 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class TestCSVPrinter{
-    static ArrayList<CSVRecord> it;
 
-    @BeforeAll
-    public static void read() throws IOException{
+
+    //   @BeforeAll
+//    public static void read() throws IOException{
+//        CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
+//        it = new ArrayList<>();
+//        for (CSVRecord r:printer.read()) {
+//            it.add(r);
+//        }
+//    }
+    @Test
+    public void testReadFile() throws IOException{
         CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
+        ArrayList<CSVRecord> it;
         it = new ArrayList<>();
         for (CSVRecord r:printer.read()) {
             it.add(r);
         }
-    }
-    @Test
-    public void testReadFile() throws IOException{
         int size = 0;
         for(CSVRecord r: it){
             size++;
@@ -26,6 +32,12 @@ public class TestCSVPrinter{
     }
     @Test
     public void testSplit() throws IOException{
+        CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
+        ArrayList<CSVRecord> it;
+        it = new ArrayList<>();
+        for (CSVRecord r:printer.read()) {
+            it.add(r);
+        }
         int size =0;
         String[] line= new String[5];
         for(CSVRecord r: it) {
