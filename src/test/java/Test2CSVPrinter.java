@@ -5,7 +5,9 @@ import java.io.IOException;
 public class Test2CSVPrinter {
     @Test
     public void first() throws IOException{
-        System.out.println("first");
+        name = first
+        printDetails(name)
+
     }
     @BeforeAll
     public static void second() throws IOException{
@@ -26,5 +28,9 @@ public class Test2CSVPrinter {
     @Test
     public void six() throws IOException{
         System.out.println("six");
+    }
+
+    public void printDetails(string name){
+        System.out.println(name+"です");
     }
 }
