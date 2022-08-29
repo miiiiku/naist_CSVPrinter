@@ -3,8 +3,8 @@ import org.junit.jupiter.api.*;
 import java.io.IOException;
 
 public class Test2CSVPrinter {
-    name = 'first'
-    count = 0
+    String name = 'first'
+    int count = 0
     second()
     @Test
     public void first() throws IOException{
@@ -16,7 +16,7 @@ public class Test2CSVPrinter {
     public static void second() throws IOException{
         System.out.println("second");
         name = 'one'
-        count = getName(count,name)
+        String count1 = getName(count,name)
         third()
     }
     @AfterAll
@@ -55,6 +55,8 @@ public class Test2CSVPrinter {
         }
         printDetalis(str(count))
         count +=1
-        return count
+                Integer i = Integer.valueOf(count);
+        String str = i.toString();
+        return str
     }
 }
