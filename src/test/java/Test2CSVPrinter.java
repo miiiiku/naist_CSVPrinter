@@ -16,7 +16,7 @@ public class Test2CSVPrinter {
     public static void second() throws IOException{
         System.out.println("second");
         name = 'one'
-        str count = getName(count,name)
+        count = getName(count,name)
         third()
     }
     @AfterAll
@@ -55,6 +55,6 @@ public class Test2CSVPrinter {
         }
         printDetalis(str(count))
         count +=1
-        return str(count)
+        return count
     }
 }
