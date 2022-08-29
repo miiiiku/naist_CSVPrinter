@@ -2,7 +2,7 @@ import org.junit.jupiter.api.*;
 
 import java.io.IOException;
 
-public class Test2CSVPrinter {
+public class Test2CSVPrinter_free {
     String name = 'first';
     public static int count = 0;
     public static boolean namecheck = False;
