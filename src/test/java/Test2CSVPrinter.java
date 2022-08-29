@@ -45,7 +45,11 @@ public class Test2CSVPrinter_free {
 
         System.out.println(name+"です");
     }
+    @Test
+    public void ten() throws IOException{
 
+        printDetails(name);
+    }
 
 
     public int getName(int count,string name){
