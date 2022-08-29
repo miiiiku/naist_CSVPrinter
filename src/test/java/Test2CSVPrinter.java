@@ -37,8 +37,11 @@ public class Test2CSVPrinter {
         System.out.println(name+"です");
     }
 
+    public void printCount(int count){
+        System.out.println(count+"です");
+    }
     public void getName(int count){
         count += 1
-        printDetalis(count)
+        //printDetalis(count)
     }
 }
