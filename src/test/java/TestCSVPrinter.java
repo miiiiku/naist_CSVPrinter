@@ -6,9 +6,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class TestCSVPrinter{
+    csvtemp = "src/main/sample.csv"
 
 
-    //   @BeforeAll
+    //@BeforeAll
 //    public static void read() throws IOException{
 //        CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
 //        it = new ArrayList<>();
@@ -19,7 +20,7 @@ public class TestCSVPrinter{
     @Test
     public void testReadFile() throws IOException{
         //レポジトリ開いてます
-        CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
+        CSVPrinter printer =  new CSVPrinter(csvtemp);
         ArrayList<CSVRecord> it;
         it = new ArrayList<>();
         for (CSVRecord r:printer.read()) {
@@ -34,7 +35,7 @@ public class TestCSVPrinter{
     @Test
     public void testSplit() throws IOException{
 
-        CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
+        CSVPrinter printer =  new CSVPrinter(csvtemp);
         ArrayList<CSVRecord> it;
         it = new ArrayList<>();
         for (CSVRecord r:printer.read()) {
@@ -58,7 +59,7 @@ public class TestCSVPrinter{
     @Test
     public void testfileisnot() throws IOException{
         Assertions.assertThrows(FileNotFoundException.class,() -> {
-            CSVPrinter printer = new CSVPrinter("src/main/sample1.csv");
+            CSVPrinter printer = new CSVPrinter(csvtemp);
         });
 
     }
