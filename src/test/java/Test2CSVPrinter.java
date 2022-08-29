@@ -49,8 +49,11 @@ public class Test2CSVPrinter {
     public void getName(int count,string name){
         count +=1
         countcheck = count %4
-
-        if(countcheck && name == "one"){
+        bool namecheck = "False"
+        if (name == "one") {
+            namecheck = "True"
+        }
+        if(countcheck && namecheck){
             System.out.println("iine");
         }
         printDetalis(str(count))
