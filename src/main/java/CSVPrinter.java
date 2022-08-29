@@ -10,6 +10,7 @@ public class CSVPrinter{
     Reader in;
     public CSVPrinter(String fileName) throws FileNotFoundException{
         in =new FileReader(fileName);
+
     }
     public Iterable<CSVRecord> read() throws IOException{
         Iterable<CSVRecord> records = CSVFormat.DEFAULT.parse(this.in);

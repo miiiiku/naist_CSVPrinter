@@ -41,8 +41,11 @@ public class Test2CSVPrinter_free {
     }
 
     public void printDetails(string name){
+
         System.out.println(name+"です");
     }
+
+
 
     public int getName(int count,string name){
 
@@ -57,5 +60,11 @@ public class Test2CSVPrinter_free {
         printDetalis(str(count))
         count +=1;
         return count;
+    }
+}
+
+public class Cat extend Test2CSVPrinter_free{
+    public static void main(String[] args) {
+        System.out.printf("saikou");
     }
 }
