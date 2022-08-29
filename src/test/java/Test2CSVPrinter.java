@@ -4,8 +4,8 @@ import java.io.IOException;
 
 public class Test2CSVPrinter {
     String name = 'first';
-    int count = 0;
-    boolean namecheck = False;
+    public static int count = 0;
+    public static boolean namecheck = False;
     second();
     @Test
     public void first() throws IOException{
