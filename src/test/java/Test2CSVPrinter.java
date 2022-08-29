@@ -3,12 +3,12 @@ import org.junit.jupiter.api.*;
 import java.io.IOException;
 
 public class Test2CSVPrinter {
-
+    name = 'first'
     count = 0
 
     @Test
     public void first() throws IOException{
-        name = 'first'
+
         printDetails(name)
         second()
 
