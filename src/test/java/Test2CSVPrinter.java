@@ -11,15 +11,12 @@ public class Test2CSVPrinter {
 
         printDetails(name)
         second()
-
-
-
     }
     @BeforeAll
     public static void second() throws IOException{
         System.out.println("second");
         name = 'one'
-        getName(count,name)
+        count = getName(count,name)
         third()
     }
     @AfterAll
@@ -47,7 +44,7 @@ public class Test2CSVPrinter {
     }
 
     public void getName(int count,string name){
-        count +=1
+
         countcheck = count %4
         bool namecheck = "False"
         if (name == "one") {
@@ -57,5 +54,7 @@ public class Test2CSVPrinter {
             System.out.println("iine");
         }
         printDetalis(str(count))
+
+        return count +=1
     }
 }
