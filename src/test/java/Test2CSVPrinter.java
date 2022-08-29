@@ -4,16 +4,16 @@ import java.io.IOException;
 
 public class Test2CSVPrinter {
     @Test
-    public void one() throws IOException{
-        System.out.println("one");
+    public void first() throws IOException{
+        System.out.println("first");
     }
     @BeforeAll
-    public static void two() throws IOException{
-        System.out.println("two");
+    public static void second() throws IOException{
+        System.out.println("second");
     }
     @AfterAll
-    public static void three() throws IOException{
-        System.out.println("three");
+    public static void third() throws IOException{
+        System.out.println("third");
     }
     @BeforeEach
     public void four() throws IOException{

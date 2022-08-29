@@ -32,6 +32,7 @@ public class TestCSVPrinter{
     }
     @Test
     public void testSplit() throws IOException{
+
         CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
         ArrayList<CSVRecord> it;
         it = new ArrayList<>();
@@ -40,11 +41,13 @@ public class TestCSVPrinter{
         }
         int count =0;
         String[] line= new String[5];
+
         for(CSVRecord r: it) {
             for (int i = 0; i < r.size(); i++) {
                 line[count++] = r.get(i);
             }
         }
+
         String[] check = {"aaa","aaaa","aaa","bbb","bbb"};
         for(int i = 0; i<5; i++){
             Assertions.assertEquals(line[i],check[i]);
