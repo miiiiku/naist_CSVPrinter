@@ -18,6 +18,7 @@ public class TestCSVPrinter{
 //    }
     @Test
     public void testReadFile() throws IOException{
+        //レポジトリ開いてます
         CSVPrinter printer =  new CSVPrinter("src/main/sample.csv");
         ArrayList<CSVRecord> it;
         it = new ArrayList<>();
