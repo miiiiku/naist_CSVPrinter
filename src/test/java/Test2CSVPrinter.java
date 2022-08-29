@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Test2CSVPrinter {
     name = 'first'
     count = 0
-
+    second()
     @Test
     public void first() throws IOException{
 
