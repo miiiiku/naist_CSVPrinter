@@ -38,11 +38,11 @@ public class TestCSVPrinter{
         for (CSVRecord r:printer.read()) {
             it.add(r);
         }
-        int size =0;
+        int count =0;
         String[] line= new String[5];
         for(CSVRecord r: it) {
             for (int i = 0; i < r.size(); i++) {
-                line[size++] = r.get(i);
+                line[count++] = r.get(i);
             }
         }
         String[] check = {"aaa","aaaa","aaa","bbb","bbb"};
