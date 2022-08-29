@@ -45,12 +45,12 @@ public class Test2CSVPrinter {
 
     public int getName(int count,string name){
 
-        //int countcheck = count %4;
-        //boolean namecheck = False;
-        //if (name == "one") {
-        //    namecheck = True;
-        //}
-        if(count %4 == 0 && name== "one"){
+        int countcheck = count %4;
+        boolean namecheck = False;
+        if (name == "one") {
+            namecheck = True;
+        }
+        if(countcheck && namecheck){
             System.out.println("iine");
         }
         printDetalis(str(count))
