@@ -9,24 +9,29 @@ public class Test2CSVPrinter {
     public void first() throws IOException{
         name = first
         printDetails(name)
+        second()
 
     }
     @BeforeAll
     public static void second() throws IOException{
         System.out.println("second");
         getName(count)
+        third()
     }
     @AfterAll
     public static void third() throws IOException{
         System.out.println("third");
+        four()
     }
     @BeforeEach
     public void four() throws IOException{
         System.out.println("four");
+        five()
     }
     @AfterEach
     public void five() throws IOException{
         System.out.println("fivve");
+        six()
     }
     @Test
     public void six() throws IOException{
