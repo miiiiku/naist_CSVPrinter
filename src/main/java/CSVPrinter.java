@@ -22,4 +22,5 @@ public class CSVPrinter{
             System.out.println(record.get(0));
         }
     }
+
 }

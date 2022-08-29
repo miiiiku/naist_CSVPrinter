@@ -8,7 +8,7 @@ public class Test2CSVPrinter {
 
     @Test
     public void first() throws IOException{
-        name = first
+        name = 'first'
         printDetails(name)
         second()
 
