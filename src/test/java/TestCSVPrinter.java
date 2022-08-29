@@ -5,8 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class TestCSVPrinter{
-    csvtemp = "src/main/sample.csv"
 
 
     //@BeforeAll
@@ -17,6 +15,10 @@ public class TestCSVPrinter{
 //            it.add(r);
 //        }
 //    }
+
+public class TestCSVPrinter{
+    csvtemp = "src/main/sample.csv"
+
     @Test
     public void testReadFile() throws IOException{
         //レポジトリ開いてます

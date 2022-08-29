@@ -5,17 +5,21 @@ import java.io.IOException;
 public class Test2CSVPrinter {
 
     count = 0
+
     @Test
     public void first() throws IOException{
         name = first
         printDetails(name)
         second()
 
+
+
     }
     @BeforeAll
     public static void second() throws IOException{
         System.out.println("second");
-        getName(count)
+        name = 'one'
+        getName(count,name)
         third()
     }
     @AfterAll
@@ -42,8 +46,12 @@ public class Test2CSVPrinter {
         System.out.println(name+"です");
     }
 
-    public void getName(int count){
-        count += 1
+    public void getName(int count,string name){
+        count +=1
+
+        if(countcheck %4 == 0 && name == "one"){
+            System.out.println("iine");
+        }
         printDetalis(str(count))
     }
 }
