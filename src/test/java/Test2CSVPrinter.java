@@ -5,6 +5,7 @@ import java.io.IOException;
 public class Test2CSVPrinter {
     String name = 'first';
     int count = 0;
+    boolean namecheck = False;
     second();
     @Test
     public void first() throws IOException{
@@ -46,7 +47,7 @@ public class Test2CSVPrinter {
     public int getName(int count,string name){
 
         int countcheck = count %4;
-        boolean namecheck = False;
+
         if (name == "one") {
             namecheck = True;
         }
