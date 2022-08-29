@@ -7,6 +7,7 @@ public class Test2CSVPrinter_free {
     public static int count = 0;
     public static boolean namecheck = False;
     second();
+    first();
     @Test
     public void first() throws IOException{
 
