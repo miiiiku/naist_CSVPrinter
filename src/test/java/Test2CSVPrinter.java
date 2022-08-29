@@ -43,7 +43,7 @@ public class Test2CSVPrinter {
         System.out.println(name+"です");
     }
 
-    public void getName(int count,string name){
+    public int getName(int count,string name){
 
         int countcheck = count %4;
         boolean namecheck = False;
